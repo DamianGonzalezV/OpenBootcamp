@@ -1,0 +1,51 @@
+body{
+    font-size: 24px;
+}
+
+.colores{
+    color: red;
+}
+
+.color-hexadecimal{
+    color: #ef233c;
+}
+
+.color-rgb{
+    color: rgb(53, 22, 90);
+}
+
+/* fondos */
+
+.fondo{
+    background-color: gainsboro;
+    background-image: url(https://images.unsplash.com/photo-1656870680056-92dbb2de403e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60);
+    background-position: bottom center;
+    color: wheat;
+}
+
+.fondo-dos{
+    background-color: gainsboro;
+    background-image: url(/04-Intro-css/imagenes/luka-senica-mvKaZllalAQ-unsplash.jpg);
+    background-position: bottom center;
+    color: wheat;
+}
+
+/* tamaños */
+
+.ancho{
+    background-color: antiquewhite;
+    width: 100px;
+}
+
+.alto{
+    background-color: bisque;
+    height: 200px;
+}
+
+.tarjeta{
+    border-style: groove;
+    border-color: #fca311;
+    border-width: 1px;
+    margin: 1.5em;
+    padding: 1em;
+}
