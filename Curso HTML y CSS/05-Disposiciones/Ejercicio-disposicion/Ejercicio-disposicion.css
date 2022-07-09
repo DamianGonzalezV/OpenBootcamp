@@ -22,8 +22,8 @@ body{
 .imagen-galeria{
     width: 300px;
     max-height: 400px;
-    padding: .2em;
-    margin: .5em .3em;
+    padding: 1em;
+    margin: .5em .5em;
 }
 
 
