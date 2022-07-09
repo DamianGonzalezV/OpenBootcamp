@@ -1,0 +1,22 @@
+.div-1, .div-2{
+    background-color: red;
+    /* display: block; por defecto */
+}
+
+.span-1{
+    background-color: gainsboro;
+    /* display: inline; por defecto */
+    float: left;
+}
+
+.span-2{
+    background-color: gainsboro;
+    /* display: inline; por defecto */
+    float: right;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    /* display: inline-block; por defecto */
+}

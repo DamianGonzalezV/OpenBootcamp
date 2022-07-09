@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-principal{
+    position: relative;
+    width: 120vh;
+    opacity: .9;
+}
+
+.imagen-principal:hover {
+    opacity: 1;
+}
+
+.galeria-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.galeria{
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.galeria:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}

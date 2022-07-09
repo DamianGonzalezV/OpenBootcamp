@@ -1,0 +1,54 @@
+.contenedor-hidden{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    padding: 32px;
+}
+
+.contenedor-scroll{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow: scroll;
+    padding: 32px;
+}
+
+.contenedor-visible{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow: visible;
+    padding: 32px;
+}
+
+.contenedor-auto{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    padding: 32px;
+}
+
+.contenedor-scroll{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow: scroll;
+    padding: 32px;
+}
+
+.contenedor-scroll-x{
+    margin: 32px 5px;
+    background-color: lightcoral;
+    width: 300px;
+    height: 100px;
+    overflow-x: hidden;
+    padding: 32px;
+}
+
