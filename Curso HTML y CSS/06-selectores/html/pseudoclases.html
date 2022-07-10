@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-clases</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hover {
+        width: 300px;
+        height: 100px;
+        background-color: dodgerblue;
+      }
+
+      .hover:hover {
+        background-color: violet;
+      }
+
+      .listado {
+        background-color: gainsboro;
+        padding: 15px;
+      }
+
+      .listado p:first-child {
+        color: blueviolet;
+      }
+
+      a:link{
+        color: darkgreen
+    }
+
+    a:visited{
+        color: darkolivegreen;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    a:active{
+        color: darkslategray;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="hover">
+      Dolore et Lorem ipsum ad tempor aliqua veniam excepteur elit sunt tempor
+      aliquip elit reprehenderit.
+    </div>
+    <div class="listado">
+      <p>
+        Lorem consectetur eu nisi elit cillum cupidatat consectetur do
+        reprehenderit exercitation.
+      </p>
+      <p>
+        Lorem consectetur eu nisi elit cillum cupidatat consectetur do
+        reprehenderit exercitation.
+      </p>
+      <p>
+        Lorem consectetur eu nisi elit cillum cupidatat consectetur do
+        reprehenderit exercitation.
+      </p>
+    </div>
+    <div class="enlaces">
+        <a href="https://www.google.com/" target="_blank">Enlace a google</a>
+        <a href="https://www.marca.com/" target="_blank">Enlace a marca</a>
+    </div>
+  </body>
+</html>
