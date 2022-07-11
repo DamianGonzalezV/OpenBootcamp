@@ -1,0 +1,40 @@
+
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: #233142;
+    margin: auto;
+    margin-top: 15%;
+}
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: #DBDFFD;
+    animation: traslacion 1.8s forwards infinite;
+    /* transition: transform 1s ease-in; */
+}
+
+.padre:hover .hijo{
+   /*  transform: translate(100%);
+    background-color: #FFE5B4; */
+    animation-play-state: paused;
+}
+
+@keyframes traslacion {
+    0% {
+        background-color: #DBDFFD;
+        transform: translate(0%);
+    }
+    25%{
+        background-color: #9BA3EB;
+        transform: translate(100%);
+    }
+    50% {
+        background-color: #646FD4;
+        transform: translate(100%) translateY(100%);
+    }
+    75%{
+        background-color: #242F9B;
+        transform: translateY(100%);
+    }
+}
