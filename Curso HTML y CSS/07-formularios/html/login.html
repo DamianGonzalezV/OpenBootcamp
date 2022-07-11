@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/07-formularios/css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oxygen&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <title>Login Form</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="span-img">
+            <h3>Sign up to</h3>
+            <span>
+                <img src="http://assets.stickpng.com/images/5eb95b4d17f3c600044a2904.png" alt="" />
+            </span>
+        </div>
+
+        <!-- First section -->
+        <div class="buttons">
+            <button class="google-btn">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2017/01/19/09/11/logo-google-1991840_1280.png"
+                        alt="google" />
+                </picture>
+                <span>Sign up with google</span>
+            </button>
+            <button class="github-btn">
+                <picture>
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo" />
+                </picture>
+            </button>
+        </div>
+
+        <!-- Separator line -->
+        <div class="separator">
+            <hr />
+            <span>Or</span>
+            <hr />
+        </div>
+
+        <!-- Form  -->
+        <form action="" method="">
+            <div class="section-inputs">
+                <label for="name">
+                    <span>Name</span>
+                    <input id="name" name="name" type="text" />
+                </label>
+                <br />
+                <label for="username">
+                    <span>Username</span>
+                    <input id="username" name="username" type="text" />
+                </label>
+            </div>
+            <br />
+            <div>
+                <label for="email">
+                    <span>Email</span>
+                    <input id="email" name="email" type="email" />
+                </label>
+            </div>
+            <br />
+            <div>
+                <label for="password">
+                    <span>Password</span>
+                    <input id="password" name="password" type="password" placeholder="6+ characters" />
+                </label>
+            </div>
+            <br />
+
+            <!-- Checkbox  -->
+            <div class="checkbox">
+                <label for="checkbox-label" class="checkbox-label">
+                    <input type="checkbox" />
+                    <span class="span-account">Creating an account means you're okay with the
+                        <a href="">Terms of Service, </a><a href="">Privacy Policy, </a>and our default
+                        <a href="">Notification Settings</a></span>
+                </label>
+            </div>
+            <br />
+
+            <!-- Submit -->
+            <button id="submit-btn" type="submit">Create account</button>
+
+            <div>
+                <p>
+                    This site is protected by reCAPTCHA and the
+                    <a href=""> Google Privacy Policy</a> and
+                    <a href="">Terms of Service </a> apply.
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
