@@ -1,0 +1,22 @@
+.row div {
+    margin: 0.25rem;
+    font-size: larger;
+}
+
+.col-sm{
+    background-color: #2D31FA;
+    color: white;
+}
+.col-md{
+    background-color: #5D8BF4;
+}
+.col-lg{
+    background-color: #DFF6FF;
+}
+.col-xl{
+    background-color: #EEEBDD;
+}
+.col-xxl{
+    background-color: #414141;
+    color: wheat;
+}
