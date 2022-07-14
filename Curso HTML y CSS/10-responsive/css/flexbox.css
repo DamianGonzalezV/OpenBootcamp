@@ -1,0 +1,36 @@
+body{
+    font-size: 16px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 0.5rem;
+    background-color: lightcoral;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    min-height: 10rem;
+    
+
+    /* Eje principal */
+    justify-content: center;
+
+    /* Eje secundario */
+    align-items: center;
+
+    /* Posicion del eje */
+    flex-direction: row;
+
+    /* Alineaación de los items */
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 15rem;
+    background-color: cadetblue;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.item2{
+    align-self: stretch;
+}

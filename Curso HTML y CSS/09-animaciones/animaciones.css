@@ -11,12 +11,9 @@
     height: 50%;
     background-color: #DBDFFD;
     animation: traslacion 1.8s forwards infinite;
-    /* transition: transform 1s ease-in; */
 }
 
 .padre:hover .hijo{
-   /*  transform: translate(100%);
-    background-color: #FFE5B4; */
     animation-play-state: paused;
 }
 

@@ -1,0 +1,21 @@
+
+.contenedor {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: repeat(3, auto); */
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 'head head head' 'main main aside' 'footer footer footer';
+    gap: 0.5rem;
+}
+
+.item {
+    background-color: lightsalmon;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.item1 {
+    
+}
