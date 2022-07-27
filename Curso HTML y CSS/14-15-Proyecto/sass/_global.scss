@@ -1,0 +1,265 @@
+@use "components";
+
+@mixin section-display {
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  padding: 3rem;
+}
+
+html {
+  min-width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0%;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  @include section-display();
+  .home-cta {
+    flex: 1;
+    .cta-text {
+      color: components.$color-main;
+    }
+    .home-title {
+      width: 20rem;
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .home-description {
+      width: 300px;
+      color: rgba($color: #000000, $alpha: 0.9);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .lead-magnet {
+      .input-col {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+.sec-features {
+  @include section-display();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .intro {
+    text-align: center;
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #888;
+    }
+  }
+  .features {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+    .text {
+      flex: 1;
+      .feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3rem 0rem;
+        .description {
+          margin-left: 1rem;
+          .title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            margin-top: -1rem;
+          }
+          .description-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .image {
+    img {
+      max-width: 40rem;
+    }
+  }
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+  .intro {
+    @extend .sec-features, .intro;
+  }
+  .benefit-cards {
+    margin: auto;
+    text-align: center;
+    width: 85%;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+.sec-kpis {
+  background: components.$color-main;
+  color: white;
+  padding: 2.5rem;
+  width: 100%;
+  .kpi {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .number {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+    .desc {
+      font-size: 0.9rem;
+      color: rgba($color: #ffffff, $alpha: 0.9);
+    }
+  }
+}
+
+.sec-onboarding {
+  .intro {
+    @extend .sec-features, .intro;
+  }
+  .steps {
+    padding: 0 7rem 5rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .step-separator {
+      flex: 1;
+      border-top: 2px solid #ddd;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.sec-footer-cta {
+  background-color: components.$color-footer;
+  padding: 5rem 5rem;
+  background-image: url(/14-15-Proyecto/assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  .sec-footer-cta {
+    width: 50%;
+    .cta-title {
+      font-size: 2rem;
+    }
+    .cta-description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .features {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .benefit-cards {
+    flex-direction: column;
+  }
+  .sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem 5rem;
+    background-image: url(/14-15-Proyecto/assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 180%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding {
+    margin-bottom: -5rem;
+    .intro {
+      margin-bottom: -3rem;
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+    .steps {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .sec-footer-cta {
+    background-image: none;
+    margin-bottom: 1rem;
+    .footer-cta {
+      width: 100%;
+      height: 260px;
+      color: components.$color-main;
+      text-align: center;
+      .cta-description {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  .sec-benefits {
+    .intro {
+      margin-bottom: -4rem;
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .sec-features {
+    .intro {
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .sec-kpis {
+    width: 105%;
+    overflow-x: hidden;
+  }
+}

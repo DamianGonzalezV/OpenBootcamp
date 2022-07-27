@@ -1,0 +1,31 @@
+
+/* Es común ecnontrar archivos index, en donde solo se importan 
+archivos con codigo css funcionales, en este caso, estamos 
+importando el archivo componentes.scss */
+@use "sass/componentes";
+
+/* Mixins */
+@use "sass/mixins";
+
+/* Estilos */
+@use "sass/estilos";
+
+
+/* Lo más común es tenerlo de esta forma,
+incluso con páginas dentro del index */
+
+// Página principal
+// Página de contacto
+// etc
+
+/* Import quedará obsoleto, usaremos mejor use y forward */
+
+/* Otros */
+
+@use "sass/builtin";  
+
+
+
+
+
+

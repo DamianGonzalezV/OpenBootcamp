@@ -1,0 +1,22 @@
+.btn {
+    margin: 1rem;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    color: #3f3f3f;
+
+    &:hover {
+        color: rgb(54, 171, 255);
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+.btn-2 {
+    @extend .btn;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    
+    &:hover{
+        color: red;
+    }
+}

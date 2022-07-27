@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.btn, .btn-2 {
+  margin: 1rem;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  color: #3f3f3f;
+}
+.btn:hover, .btn-2:hover {
+  color: rgb(54, 171, 255);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-2 {
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+.btn-2:hover {
+  color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  color: #3f3f3f;
+  width: 50rem;
+  text-transform: uppercase;
+  background-color: #eddda3;
+}
+
+p {
+  color: #3f3f3f;
+  width: 50rem;
+  text-transform: uppercase;
+  background-color: #f3f9f2;
+}
+
+.listado {
+  width: 10rem;
+  background-color: #bfe1bf;
+  padding: 0.5rem;
+}
+.listado ul {
+  margin: 0.5rem;
+}
+.listado ul li {
+  list-style: none;
+}
+.listado ul li:hover {
+  color: #f3f9f2;
+}
+
+/* Introducir un string dentro de uno ya definido */
+/* Largo del string */
+/* String cortado desde un index a otro */
+/* Convertir a mayusculas o minisculas */
+/* Generar id único */
+/* Número euler */
+/* Número pi */
+/* $border-2: [solid, 1px, #ccc];
+@debug list.is-bracketed($border-2); */
+/* Uniendo dos listas */
+/* Que tipo de separador tiene */
+/* complementario */
+/* Es común ecnontrar archivos index, en donde solo se importan 
+archivos con codigo css funcionales, en este caso, estamos 
+importando el archivo componentes.scss */
+/* Mixins */
+/* Estilos */
+/* Lo más común es tenerlo de esta forma,
+incluso con páginas dentro del index */
+/* Import quedará obsoleto, usaremos mejor use y forward */
+/* Otros */
+
+/*# sourceMappingURL=styles.css.map */

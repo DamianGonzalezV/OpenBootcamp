@@ -1,0 +1,127 @@
+@mixin btn-sm-modify {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+@mixin btn-base {
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  height: 2.375rem;
+}
+
+$color-main: #0075ff;
+$color-footer: #F4F7FE;
+
+.btn-main {
+  @include btn-base();
+  background-color: $color-main;
+  color: white;
+  border: solid 1px $color-main;
+
+  &:hover {
+    background-color: white;
+    color: $color-main;
+  }
+
+  &-s {
+    @extend .btn-main;
+    @include btn-sm-modify();
+  }
+}
+
+.btn-sec {
+  @include btn-base();
+  color: black;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgb(227, 225, 225);
+  border-radius: 0.25rem;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+    border: 1px solid #444;
+    border-radius: 0.25rem;
+  }
+
+  &-s {
+    @extend .btn-sec;
+    @include btn-sm-modify();
+  }
+}
+
+.main-menu {
+  margin: 0;
+  li {
+    font-size: 0.5rem;
+    list-style: none;
+    display: inline;
+    margin-right: 1.5rem;
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: small;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.icon-sm {
+  i {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: 50%;
+    color: $color-main;
+    box-shadow: 2px 2px 5px #dedbdb;
+  }
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    color: $color-main;
+    font-size: 7.5rem;
+    text-align: center;
+  }
+  .description {
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .text {
+      color: rgba($color: #000000, $alpha: 0.6);
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  .cta {
+    color: $color-main;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    color: $color-main;
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+  }
+}
